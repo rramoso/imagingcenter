@@ -1,0 +1,47 @@
+.main-service{
+
+	background-color: #70ADE2;
+	opacity: 0.8;
+	
+}
+
+.downloadable-pdf{
+    height: 200px;
+    width: 150px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.video-service{
+  
+}
+video {
+   width: 100%;
+   height: 50%;
+}
+.gallery-grid-CT{
+  min-height: 300px;
+  background: url(../images/CT-Scan.jpg)no-repeat 0px 0px;
+  background-size: cover;
+  padding: 10% 0;
+}
+
+.gallery-grid-MRI{
+  min-height: 300px;
+  background: url(../images/MRI.jpg)no-repeat 0px 0px;
+  background-size: cover;
+  padding: 10% 0;
+}
+.gallery-grid-XR{
+  min-height: 300px;
+  background: url(../images/x-ray.jpg)no-repeat 0px 0px;
+  background-size: cover;
+  padding: 10% 0;
+}
+.gallery-grid-Ultra{
+  min-height: 300px;
+  background: url(../images/ultrasound.jpg)no-repeat 0px 0px;
+  background-size: cover;
+  padding: 10% 0;
+}
