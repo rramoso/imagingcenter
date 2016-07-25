@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+	{% block customCSS %}
+    	<link rel="stylesheet" type="text/css" href="{% static 'home/css/custom.css' %}">
+    {% endblock %}
+	{%block mainContent %}
+	<!--banner-->
+	<div class="banner">
+		<div class="container ">
+			
+			<!-- Home image  -->
+			
+			<!--//Home image -->
+			
+		</div>
+	</div>
+	<!--//banner-->
+	<!--banner-bottom-->
+	<div class="banner-bottom">
+		<div class="container">
+			<h1>Nuestros servicios principales</h1>
+			<a href="#gallery" class="arrow scroll"> </a>
+		</div>
+	</div>
+	<!--//banner-bottom-->
+	<!--gallery-->
+	<div class="gallery" id="gallery">
+		<div class="col-md-6 " style="padding-right: 0px; padding-left: 0px;">
+			<div class="gallery-grid-CT">
+				<div class="main-service">
+					<h4>CT Scan</h4>
+					<p>Lorem Ipsum was popularised in the with the release of Letraset sheets contai ningthe with the release of </p>
+				</div>
+			</div>
+			<div class="gallery-grid-MRI">
+				<div class="main-service">
+					<h4>MRI Scan</h4>
+					<p>Lorem Ipsum was popularised in the with the release of Letraset sheets contai ningthe with the release of </p>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="col-md-6 gallery-right">
+			<div class="gallery-grid-Ultra">
+				<div class="main-service">
+					<h4>Ultrasound</h4>
+					<p>Lorem Ipsum was popularised in the with the release of Letraset sheets contai ningthe with the release of </p>
+				</div>
+			</div>	
+			<div class="gallery-grid-XR">		
+				<div class="main-service">
+					<h4>Digital X-Ray</h4>
+					<p>Lorem Ipsum was popularised in the with the release of Letraset sheets contai ningthe with the release of </p>
+				</div>
+			</div>
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--//gallery-->
+	<!--work-->
+	<div class="work">		
+		<div class="container">	
+			<div class="work-title">
+				<h3>Imaging Center</h3>
+			</div>
+			<div class="col-md-4 work-grids">
+				<ul>
+					<li><img src="{% static 'home/images/icon2.png' %}" alt=""></li>
+					<li>
+						<h4>Seguros</h4>
+						<p>Mira la lista de seguros que aceptamos</p>
+					</li>
+				</ul>
+			</div>	
+			<div class="col-md-4 work-grids">
+				<ul>
+					<li><img src="{% static 'home/images/icon3.png' %}" alt=""></li>
+					<li>
+						<h4>Formularios</h4>
+						<p>Puedes imprimir estos formularios y traerlos llenos a nuestra clinica</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 work-grids">
+				<ul>
+					<li><img src="{% static 'home/images/icon4.png' %}" alt=""></li>
+					<li>
+						<h4>Citas en linea</h4>
+						<p>Haz una cita online</p>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+	<!--map-->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d576.9532980333565!2d-70.70252200078544!3d19.452604726018986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sdo!4v1461703027826"></iframe>
+		<div class="container">	
+			<div class="map-info">
+				<ul>
+					<li>Imaging Center</li>
+					<li>Restauracion #94</li>
+					<li>Santiago de los Caballeros</li>
+					<li>111 222 555</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--//map-->
+	<!--//work-->
+	<div class="like">		
+		<div class="container">
+			<div class="work-title">
+				<h3>Stay connected with us</h3>
+				<p class="cnnct">Lorem Ipsum was popularised in the with the release of Letraset sheets contai ningthe</p>
+			</div>
+			<div class="col-md-3 like-grids">
+				<a href="#">
+					<img src="{% static 'home/images/icon1.png' %}" alt=""/>
+				</a>
+				<p>Facebook</p>
+			</div>
+			<div class="col-md-3 like-grids">
+				<a href="#">
+					<img src="{% static 'home/images/icon5.png' %}" alt=""/>
+				</a>
+				<p>Twitter</p>
+			</div>
+			<div class="col-md-3 like-grids">
+				<a href="#">
+					<img src="{% static 'home/images/icon6.png' %}" alt=""/>
+				</a>
+				<p>Pinterest</p>
+			</div>
+			<div class="col-md-3 like-grids">
+				<a href="#">
+					<img src="{% static 'home/images/icon7.png' %}" alt=""/>
+				</a>
+				<p>Googleplus</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	{% endblock %}
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			jQuery().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'home/js/bootstrap.js' %}"> </script>
