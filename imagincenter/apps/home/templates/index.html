@@ -8,56 +8,10 @@
 	<div class="banner">
 		<div class="container ">
 			
-			<!-- banner-text Slider starts Here -->
-			<script src="{% static 'home/js/responsiveslides.min.js' %}"></script>
-			<script>
-				// You can also use "$(window).load(function() {"
-					jQuery.noConflict();
-					jQuery(window).load(function() {
-					// Slideshow 4
-						console.log('puesi');
-						jQuery("#slider3").responsiveSlides({
-						auto: true,
-						pager:true,
-						nav:false,
-						speed: 500,
-						namespace: "callbacks",
-						before: function () {
-						jQuery('.events').append("<li>before event fired.</li>");
-						},
-						after: function () {
-							jQuery('.events').append("<li>after event fired.</li>");
-						}
-					});	
-				});
-			</script>
-			<!--//End-slider-script -->
-			<div>
-
-			</div>
-			<div class="callbacks_container">
-				<ul class="rslides" id="slider3">
-					<li>
-						<!-- <img class ="banner" src="{% static 'home/media/welcome.jpg' %}"> -->
-						<div class="banner-text">		
-							<h1>Bienvenido a Imaging Center</h1>
-							<p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-						</div>
-					</li>
-					<li>
-						<div class="banner-text">		
-							<h1>Nuestra inauguraci&oacute;n</h1>
-							<p>Majority have sufferedorem lipsum available, but the  alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-						</div>
-					</li>
-					<li>
-						<div class="banner-text">		
-							<h1>Nuestra revista</h1>
-							<p>Randomised words orem ipsum available, but the majority have suffered alteration in some form, by injected humour, or which don't look even slightly believable.</p>
-						</div>
-					</li>
-				</ul>
-			</div>
+			<!-- Home image  -->
+			
+			<!--//Home image -->
+			
 		</div>
 	</div>
 	<!--//banner-->

@@ -6,6 +6,7 @@
 		<title> </title>
 		<link href="{% static 'home/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
 		<link href="{% static 'home/css/style.css' %}" type="text/css" rel="stylesheet" media="all">
+		<link href="{% static 'home/css/custom.css' %}" type="text/css" rel="stylesheet" media="all">
 		<!-- Custom Theme files -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,7 +15,7 @@
     	{% block customCSS %}
     	{% endblock %}
 	</head>
-	<body>
+	<body >
 
 		<script type="text/javascript" src="{% static 'home/js/jquery-1.11.1.min.js' %}"></script>
 		<script type="text/javascript" src="{% static 'home/js/bootstrap.js' %}"></script>
@@ -24,8 +25,8 @@
 		<script type="text/javascript" src="{% static 'home/js/move-top.js' %}"></script>
 		<script type="text/javascript" src="{% static 'home/js/responsiveslides.js' %}"></script>
 
-		<div class="header">
-			<div class="container">
+		<div class="header" >
+			<div class="container" >
 				<div class="header-logo">
 					<a href="/">
 						<img src="{% static 'home/images/logo.png' %}" alt="logo"/>
@@ -40,7 +41,7 @@
 		</div>
 	<!--header-bottom-->
 		<div class="header-bottom">
-			<div class="container">
+			<div class="container" >
 				<!--top-nav-->
 				<div class="top-nav cl-effect-5">
 					<span class="menu-icon"><img src="{% static 'home/images/menu-icon.png' %}" alt=""/></span>		
@@ -73,8 +74,10 @@
 			</div>
 		</div>
 	<!--//header-bottom-->
+	<div class="mainContent">
 		{% block mainContent %}
 		{% endblock%}
+	</div>
 		
 
 		<div class="footer">
