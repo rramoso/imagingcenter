@@ -1,6 +1,6 @@
 .main-service{
 
-	background-color: #70ADE2;
+	background-color: #9ecff9;
 	opacity: 0.8;
 	
 }
@@ -10,19 +10,21 @@
   position: fixed;
   top:0px;
   z-index: 200;
+  padding-top: 0px;
+  padding-bottom: 27px;
 }
 
 .header-bottom{
   width: 100%;
   top:0px;
   position: fixed;
-  margin-top: 90px;
+  margin-top: 130px;
   background-color: white;
   z-index: 200;
 
 }
 .mainContent{
-  margin-top: 130px;
+  margin-top: 170px;
 }
 
 .downloadable-pdf{

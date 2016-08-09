@@ -44,7 +44,7 @@ body a:hover{
 /*--header--*/
 .header {
   padding:1.3em 0;
-  background-color: #70ADE2;
+  background-color: #9ecff9;
 }
 .header p {
   font-size: 1.1em;
@@ -60,6 +60,25 @@ body a:hover{
 }
 .header-info{
 	float:right;
+}
+.header-info ul li{
+  display: block;
+  color: #ffffff;
+ font-size: 1em;
+}
+
+.header-info ul li span{
+  background: url(../images/iconsprite.png)no-repeat 0px 3px;
+  color: white;
+  padding: 0px 7px;
+  margin-right: 12px;
+}
+.header-info ul li span.ph-no{
+    background: url(../images/iconsprite.png)no-repeat -12px 3px;
+}
+.header-info ul li span.mail{
+  background: url(../images/iconsprite.png)no-repeat -31px 3px;
+  margin-right: 15px;
 }
 input.form-control {
   border-color: #000;
@@ -98,7 +117,7 @@ span.menu-icon {
   margin-left: 0;
 }
 .top-nav li a {
-  color: #70ADE2;
+  color: #9ecff9;
   font-size: 1.5em;
   display: block;
   font-family: 'Marvel-Bold';
@@ -383,7 +402,7 @@ button.btn.btn-default:focus {
 	background: white;
 }
 .callbacks_here a:after{
-	background: #70ADE2;
+	background: #9ecff9;
 }
 /*--//slider end here--*/
 /*--//banner--*/
@@ -460,7 +479,7 @@ button.btn.btn-default:focus {
   font-size: 2.8em;
   text-align: center;
   font-family: 'Marvel-Regular';
-  color: #70ADE2;
+  color: #9ecff9;
 }
 .work-title p {
   font-size: 1em;
@@ -498,7 +517,7 @@ button.btn.btn-default:focus {
 	text-align:center;
 }
 .like-grids {
-  background-color: #70ADE2;
+  background-color: #9ecff9;
   margin: 0 32px;
   width: 19%;
   padding: 20px;
@@ -565,7 +584,7 @@ button.btn.btn-default:focus {
 .footer-grids h4 {
   font-size: 2.5em;
   font-family: 'Marvel-Regular';
-  color: #70ADE2;
+  color: #9ecff9;
 }
 .footer-grids h5 {
 	color: #000;
@@ -598,7 +617,7 @@ button.btn.btn-default:focus {
 	color: #868686;
 }
 .recent-posts ul li a:hover{
-	color:#70ADE2;
+	color:#9ecff9;
 }
 .recent-posts ul li span{
 	background: url(../images/iconsprite.png)no-repeat 0px 3px;
@@ -613,7 +632,7 @@ button.btn.btn-default:focus {
 	margin-right: 15px;
 }
 .footer-bottom {
-  background: #70ADE2;
+  background: #9ecff9;
   text-align: center;
   padding: 2em 0;
 }
@@ -660,7 +679,7 @@ button.btn.btn-default:focus {
 	padding: 4em 0;
 }
 .about h3 {
-  color: #70ADE2;
+  color: #9ecff9;
   font-size: 3em;
   font-weight: 600;
   text-align: center;
@@ -698,7 +717,7 @@ button.btn.btn-default:focus {
   font-size: 1em;
 }
 .about-text-right ul li a:hover{
-	color: #70ADE2;
+	color: #9ecff9;
 }
 .about-slid{
   background: url(../images/slid.jpg)no-repeat 0px 0px;
@@ -743,7 +762,7 @@ button.btn.btn-default:focus {
   color: #000;
 }
 .about-team  h4 a:hover{
-  color: #70ADE2;
+  color: #9ecff9;
 }
 .about-team p {
   color: #868585;
@@ -796,7 +815,7 @@ button.btn.btn-default:focus {
   font-size: 3em;
   text-align: center;
   font-family: 'Marvel-Regular';
-  color: #70ADE2;
+  color: #9ecff9;
 }
 .row.services-info {
   margin-top: 3em;
@@ -908,7 +927,7 @@ img.img-responsive.glry-img {
   padding: 4em 0;
 }
 .news h3.ttl {
-  color: #70ADE2;
+  color: #9ecff9;
   font-size: 3em;
   font-weight: 600;
   text-align: center;
@@ -924,7 +943,7 @@ img.img-responsive.glry-img {
 	  padding: 3em 0 0;
 }
 .contact h3 {
-  color: #70ADE2;
+  color: #9ecff9;
   font-size: 3em;
   font-weight: 600;
   text-align: center;
@@ -985,14 +1004,14 @@ img.img-responsive.glry-img {
 	-ms-transition: 0.5s all ease;
 }
 .contact-form input[type="submit"]:hover {
-  border: 1px dotted #70ADE2;
+  border: 1px dotted #9ecff9;
   color: #3F8683;
   background: none;
 }
 /*--//contact-page--*/
 /*--trypography--*/
 .news h3 {
-  color: #70ADE2;
+  color: #9ecff9;
   font-family: 'Marvel-Bold';
 }
 h3.btsp {

@@ -29,12 +29,16 @@
 			<div class="container" >
 				<div class="header-logo">
 					<a href="/">
-						<img src="{% static 'home/images/logo.png' %}" alt="logo"/>
+						<img src="{% static 'home/images/LOGO 30.jpg' %}" alt="logo"/>
 					</a>	
 				</div>
 				<div class="header-info">
-					<p>Information Service:</p>
-					<h4>{{telephone_number}}</h4>
+					<h4>Nuestra ubicaci&oacute;n</h4>
+					<ul>
+						<li><span></span>Restauracion #94, Santiago de los Caballeros, Rep. Dom.</li>
+						<li><span class="ph-no"></span>+1 (809) 888 8888</li>
+						<li><span class="mail"></span><a href="mailto:example@mail.com">mail@example.com</a></li>
+					</ul>
 				</div>			
 				<div class="clearfix"> </div>
 			</div>	
@@ -46,10 +50,11 @@
 				<div class="top-nav cl-effect-5">
 					<span class="menu-icon"><img src="{% static 'home/images/menu-icon.png' %}" alt=""/></span>		
 					<ul class="nav1">
-						<li><a href="{% url 'home' %}" class="active"><span data-hover="Inicio">Inicio</span></a></li>
+						<li><a href="{% url 'home' %}"><span data-hover="Inicio">Inicio</span></a></li>
 						<li><a href="{% url 'about' %}"> <span data-hover="Nosotros">Nosotros</span></a></li>
 						<li><a href="{% url 'pacient' %}"> <span data-hover="Paciente">Paciente</span></a></li>
 						<li><a href="{% url 'services' %}"> <span data-hover="Servicios">Servicios</span></a></li>
+						<li><a href="{% url 'pacient' %}#insurence"> <span data-hover="Seguros">Seguros</span></a></li>
 						<!-- <li><a href="news.html"> <span data-hover="Noticias">Noticias</span></a></li>
 						<li><a href="contact.html"> <span data-hover="Contactanos">Contactanos</span></a></li> -->
 					</ul>
