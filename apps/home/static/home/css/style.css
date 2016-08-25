@@ -45,12 +45,11 @@ body a:hover{
 .header {
   padding:1.3em 0;
   background-color: #9ecff9;
-}
-.header p {
-  font-size: 1.1em;
-  color: #fff;
-  margin-bottom: .2em;
-  text-align: right;
+  top: 0px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
 }
 .header-logo{
 	float:left;
@@ -61,12 +60,12 @@ body a:hover{
 .header-info{
 	float:right;
 }
+
 .header-info ul li{
   display: block;
   color: #ffffff;
  font-size: 1em;
 }
-
 .header-info ul li span{
   background: url(../images/iconsprite.png)no-repeat 0px 3px;
   color: white;
@@ -92,6 +91,10 @@ input.form-control:focus {
   box-shadow: 1px 1px 6px rgb(150, 148, 148);
   -webkit-box-shadow: 1px 1px 6px rgb(150, 148, 148);
   -moz-box-shadow: 1px 1px 6px rgb(150, 148, 148);
+  width: 100%;
+  position: absolute;
+  z-index: 200;
+  background-color: white;
 }
 .header-info h4 {
   font-size: 3em;

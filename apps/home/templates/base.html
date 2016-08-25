@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> </title>
+		<title> Imaging Center</title>
 		<link href="{% static 'home/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
 		<link href="{% static 'home/css/style.css' %}" type="text/css" rel="stylesheet" media="all">
 		<link href="{% static 'home/css/custom.css' %}" type="text/css" rel="stylesheet" media="all">
@@ -26,7 +26,7 @@
 		<script type="text/javascript" src="{% static 'home/js/responsiveslides.js' %}"></script>
 
 		<div class="header" >
-			<div class="container" >
+			<div class="container" style="padding-bottom:10px;">
 				<div class="header-logo">
 					<a href="/">
 						<img src="{% static 'home/images/LOGO 30.jpg' %}" alt="logo"/>
@@ -35,50 +35,52 @@
 				<div class="header-info">
 					<h4>Nuestra ubicaci&oacute;n</h4>
 					<ul>
-						<li><span></span>Restauracion #94, Santiago de los Caballeros, Rep. Dom.</li>
-						<li><span class="ph-no"></span>+1 (809) 888 8888</li>
+						<li><span></span>Restauración #94, Santiago de los Caballeros, Rep. Dom.</li>
+						<li><span class="ph-no"></span>+1 (809) 806 1222</li>
 						<li><span class="mail"></span><a href="mailto:example@mail.com">mail@example.com</a></li>
 					</ul>
 				</div>			
 				<div class="clearfix"> </div>
-			</div>	
-		</div>
-	<!--header-bottom-->
-		<div class="header-bottom">
-			<div class="container" >
-				<!--top-nav-->
-				<div class="top-nav cl-effect-5">
-					<span class="menu-icon"><img src="{% static 'home/images/menu-icon.png' %}" alt=""/></span>		
-					<ul class="nav1">
-						<li><a href="{% url 'home' %}"><span data-hover="Inicio">Inicio</span></a></li>
-						<li><a href="{% url 'about' %}"> <span data-hover="Nosotros">Nosotros</span></a></li>
-						<li><a href="{% url 'pacient' %}"> <span data-hover="Paciente">Paciente</span></a></li>
-						<li><a href="{% url 'services' %}"> <span data-hover="Servicios">Servicios</span></a></li>
-						<li><a href="{% url 'pacient' %}#insurence"> <span data-hover="Seguros">Seguros</span></a></li>
-						<!-- <li><a href="news.html"> <span data-hover="Noticias">Noticias</span></a></li>
-						<li><a href="contact.html"> <span data-hover="Contactanos">Contactanos</span></a></li> -->
-					</ul>
-					<!-- script-for-menu -->
-					<script>
-					   $( "span.menu-icon" ).click(function() {
-						 $( "ul.nav1" ).slideToggle( 300, function() {
-						 // Animation complete.
-						  });
-						 });
-					</script>
-					<!-- /script-for-menu -->
-				</div>
-				<!--//top-nav-->
-				<form class="navbar-form navbar-right">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-						<button type="submit" class="btn btn-default"></button>
-					</div>		
-				</form>
-				<div class="clearfix"> </div>
 			</div>
+			<!--header-bottom-->
+
+			<div class="header-bottom">
+				<div class="container" >
+					<!--top-nav-->
+					<div class="top-nav cl-effect-5">
+						<span class="menu-icon"><img src="{% static 'home/images/menu-icon.png' %}" alt=""/></span>		
+						<ul class="nav1">
+							<li><a href="{% url 'home' %}"><span data-hover="Inicio">Inicio</span></a></li>
+							<li><a href="{% url 'about' %}"> <span data-hover="Nosotros">Nosotros</span></a></li>
+							<li><a href="{% url 'pacient' %}"> <span data-hover="Paciente">Paciente</span></a></li>
+							<li><a href="{% url 'services' %}"> <span data-hover="Servicios">Servicios</span></a></li>
+							<li><a href="{% url 'pacient' %}#insurence"> <span data-hover="Seguros">Seguros</span></a></li>
+							<!-- <li><a href="news.html"> <span data-hover="Noticias">Noticias</span></a></li>
+							<li><a href="contact.html"> <span data-hover="Contactanos">Contactanos</span></a></li> -->
+						</ul>
+						<!-- script-for-menu -->
+						<script>
+						   $( "span.menu-icon" ).click(function() {
+							 $( "ul.nav1" ).slideToggle( 300, function() {
+							 // Animation complete.
+							  });
+							 });
+						</script>
+						<!-- /script-for-menu -->
+					</div>
+					<!--//top-nav-->
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<button type="submit" class="btn btn-default"></button>
+						</div>		
+					</form>
+					<div class="clearfix"> </div>
+				</div>
+			</div>	
+			<!--//header-bottom-->
 		</div>
-	<!--//header-bottom-->
+	
 	<div class="mainContent">
 		{% block mainContent %}
 		{% endblock%}
@@ -88,30 +90,7 @@
 		<div class="footer">
 		<div class="container">
 			<div class="footer-grids">				
-				<div class="col-md-6 recent-posts">
-					<h4>Articulos Recientes</h4>
-					<div class="recent-posts-text">
-						<h5>MARCH 30, 2015</h5>
-						<p>Duis autem vel eum iriure dolor</p>
-					</div>
-					<div class="recent-posts-text">
-						<h5>MARCH 15, 2015</h5>
-						<p>Duis autem vel eum iriure dolor</p>
-					</div>
-					<div class="recent-posts-text">
-						<h5>MARCH 3, 2015</h5>
-						<p>Duis autem vel eum iriure dolor</p>
-					</div>
-				</div>
-				<div class="col-md-6 recent-posts">
-					<h4>Nuestra ubicaci&oacute;n</h4>
-					
-					<ul>
-						<li><span></span>Restauracion #94, Santiago de los Caballeros, Rep. Dom.</li>
-						<li><span class="ph-no"></span>+1 (809) 888 8888</li>
-						<li><span class="mail"></span><a href="mailto:example@mail.com">mail@example.com</a></li>
-					</ul>
-				</div>
+				 
 				<div class="clearfix"> </div>
 			</div>
 		</div>	
