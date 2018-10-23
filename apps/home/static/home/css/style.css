@@ -29,7 +29,7 @@ body a{
 	text-decoration:none;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;			   
+	margin:0;
 }
 p{
 	margin:0;
@@ -1023,7 +1023,7 @@ h3.btsp {
 }
 .grid_4{
 	background:#fff;
-}  
+}
 .grid_5{
 	background:#fff;
 	padding:1em 0 2em 0;
@@ -1314,7 +1314,7 @@ h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
 .gallery-right {
   float: right;
   width: 50%;
-}	
+}
 .banner-text h1{
 	font-size: 2.8em;
 }
@@ -1458,7 +1458,7 @@ h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
 		padding: 2em 0;
 	}
 	.gallery h4 {
-		font-size: 2.2em;	
+		font-size: 2.2em;
 	}
 	.gallery-grid-a {
 		min-height: 200px;
@@ -1848,3 +1848,41 @@ h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
 	}
 }
 /*--//responsive-design---*/
+
+/* Dropdown menu */
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: white;
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+	/* background-color: #3e8e41; */
+}

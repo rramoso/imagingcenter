@@ -29,17 +29,17 @@
 			<div class="container" style="padding-bottom:10px;">
 				<div class="header-logo">
 					<a href="/">
-						<img style="max-height: 100px;" src="{% static 'home/images/LOGO 30.jpg' %}" alt="logo"/>
-					</a>	
+						<img style="max-height: 100px;" src="{% static 'home/images/home-logo.png' %}" alt="logo"/>
+					</a>
 				</div>
 				<div class="header-info">
 					<h4>Nuestra ubicaci&oacute;n</h4>
 					<ul>
 						<li><span></span>Restauración #94, Santiago de los Caballeros, Rep. Dom.</li>
 						<li><span class="ph-no"></span>+1 (809) 806 1222</li>
-						<li><span class="mail"></span><a href="mailto:example@mail.com">mail@example.com</a></li>
+						<li><span class="mail"></span><a href="imagingdr01@gmail.com">imagingdr01@gmail.com</a></li>
 					</ul>
-				</div>			
+				</div>
 				<div class="clearfix"> </div>
 			</div>
 			<!--header-bottom-->
@@ -48,13 +48,22 @@
 				<div class="container" >
 					<!--top-nav-->
 					<div class="top-nav cl-effect-5">
-						<span class="menu-icon"><img  src="{% static 'home/images/menu-icon.png' %}" alt=""/></span>		
+						<span class="menu-icon"><img  src="{% static 'home/images/menu-icon.png' %}" alt=""/></span>
 						<ul class="nav1">
 							<li><a href="{% url 'home' %}"><span data-hover="Inicio">Inicio</span></a></li>
-							<li><a href="{% url 'about' %}"> <span data-hover="Nosotros">Nosotros</span></a></li>
-							<li><a href="{% url 'pacient' %}"> <span data-hover="Paciente">Paciente</span></a></li>
+							<div class="dropdown">
+							  <li> <a href="#"> <span data-hover="Nosotros">Nosotros</span></a></li>
+							  <div class="dropdown-content">
+							    <a href="{% url 'admin' %}#">Administracion</a>
+							    <a href="{% url 'doctors' %}#">Medicos</a>
+							    <a href="#">Tecnicos</a>
+							  </div>
+							</div>
 							<li><a href="{% url 'services' %}"> <span data-hover="Servicios">Servicios</span></a></li>
 							<li><a href="{% url 'pacient' %}#insurence"> <span data-hover="Seguros">Seguros</span></a></li>
+							<li><a href="{% url 'pacient' %}"> <span data-hover="Paciente">Paciente</span></a></li>
+							<li><a href="{% url 'home' %}"> <span data-hover="Reportes Cientifica">Revista Cientifica</span></a></li>
+
 							<!-- <li><a href="news.html"> <span data-hover="Noticias">Noticias</span></a></li>
 							<li><a href="contact.html"> <span data-hover="Contactanos">Contactanos</span></a></li> -->
 						</ul>
@@ -73,28 +82,28 @@
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Search">
 							<button type="submit" class="btn btn-default"></button>
-						</div>		
+						</div>
 					</form>
 					<div class="clearfix"> </div>
 				</div>
-			</div>	
+			</div>
 			<!--//header-bottom-->
 		</div>
-	
+
 	<div class="mainContent">
 		{% block mainContent %}
 		{% endblock%}
 	</div>
-		
+
 
 		<div class="footer">
 		<div class="container">
-			<div class="footer-grids">				
-				 
+			<div class="footer-grids">
+
 				<div class="clearfix"> </div>
 			</div>
-		</div>	
-	</div>	
+		</div>
+	</div>
 	<!--//footer-->
 	<div class="footer-bottom">
 		<div class="container">
@@ -109,12 +118,12 @@
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 			};
 			*/
-			
+
 			jQuery().UItoTop({ easingType: 'easeOutQuart' });
-			
+
 		});
 	</script>
 		{% block customJS %}{% endblock %}

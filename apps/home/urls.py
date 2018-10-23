@@ -3,9 +3,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .views import *
 
-urlpatterns = [ 
+urlpatterns = [
 	url(r'^$', Home.as_view(), name='home'),
-	url(r'^nosotros$', About.as_view(), name='about'),
+	url(r'^administrativo$', Admins.as_view(), name='admin'),
+	url(r'^medicos$', Doctors.as_view(), name='doctors'),
 	url(r'^servicios$', Services.as_view(), name='services'),
 	url(r'^servicio$', Service.as_view(), name='service'),
 	url(r'^paciente$', Patient.as_view(), name='pacient'),
